@@ -33,8 +33,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // 4 code your aktivity
-        // implementasi your slider
+        // implement slider
         mDemoSlider = (SliderLayout)findViewById(R.id.slider);
 
         // and add url image with internet
@@ -58,8 +57,7 @@ public class MainActivity extends AppCompatActivity implements BaseSliderView.On
 
             //add your extra information
             textSliderView.bundle(new Bundle());
-            textSliderView.getBundle()
-                    .putString("extra",name);
+//            textSliderView.getBundle().putString("extra",name);
 
             mDemoSlider.addSlider(textSliderView);
         }
